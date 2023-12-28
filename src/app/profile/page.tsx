@@ -1,4 +1,5 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import MyCollections from "@/components/MyCollections";
 import UserCard from "@/components/UserCard";
 import UserGraphList from "@/components/UserGraphList";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -23,7 +24,9 @@ const Profile = () => {
           <TabsContent value="my-graphs" className="py-7 px-2">
             <UserGraphList />
           </TabsContent>
-          <TabsContent value="paper-collections">2</TabsContent>
+          <TabsContent value="paper-collections" className="py-7 px-2">
+            <MyCollections />
+          </TabsContent>
         </Tabs>
       </div>
     </MaxWidthWrapper>

@@ -6,8 +6,7 @@ export const TEST_PAPERS = [
   },
   {
     id: 1,
-    title:
-      "Sample paper numero tres but with a longer name",
+    title: "Sample paper numero tres but with a longer name",
     favorite: false,
   },
   {
@@ -24,6 +23,45 @@ export const TEST_PAPERS = [
     id: 4,
     title: "Sample paper numero tres",
     favorite: false,
+  },
+];
+
+export const TEST_COLLECTIONS = [
+  {
+    id: 0,
+    title: "Numero Quatro",
+    description: "A bunch of papers I like",
+    numberPapers: 3,
+  },
+  {
+    id: 1,
+    title: "Numero Quatro",
+    description: "A bunch of papers I like",
+    numberPapers: 3,
+  },
+  {
+    id: 2,
+    title: "Numero Quatro",
+    description: "A bunch of papers I like",
+    numberPapers: 3,
+  },
+  {
+    id: 3,
+    title: "Numero Quatro",
+    description: "A bunch of papers I like",
+    numberPapers: 3,
+  },
+  {
+    id: 4,
+    title: "Numero Quatro",
+    description: "A bunch of papers I like",
+    numberPapers: 3,
+  },
+  {
+    id: 5,
+    title: "Numero Quatro",
+    description: "A bunch of papers I like",
+    numberPapers: 3,
   },
 ];
 
