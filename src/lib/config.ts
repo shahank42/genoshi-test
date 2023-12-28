@@ -7,7 +7,7 @@ export const TEST_PAPERS = [
   {
     id: 1,
     title:
-      "Sample paper numero tres but with a longer nameSample paper numero tres",
+      "Sample paper numero tres but with a longer name",
     favorite: false,
   },
   {
