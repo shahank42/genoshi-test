@@ -26,6 +26,42 @@ export const TEST_PAPERS = [
   },
 ];
 
+export const PRICING_TIERS = [
+  {
+    name: "basic-plan",
+    title: "Basic Plan",
+    cost: 4,
+    description: "Get started ASAP with our basic plan!",
+    features: ["Up to 10 graphs", "Up to 500 chatbot queries"],
+    cta: "Purchase Now!",
+  },
+  {
+    name: "pro-plan",
+    title: "Pro Plan",
+    cost: 8,
+    description: "Our most popular pro plan to meet all your needs!",
+    features: [
+      "Up to 50 graphs",
+      "Up to 1000 chatbot queries",
+      "Email + live chat support",
+    ],
+    cta: "Purchase Now!",
+  },
+  {
+    name: "enterprise-plan",
+    title: "Enterprise Plan",
+    cost: 0,
+    description: "Have specific requirements? Let's talk business.",
+    features: [
+      "Unlimited graphs",
+      "Unlimited chatbot queries",
+      "Ability to upload custom PDFs",
+      "24/7 phone + email support",
+    ],
+    cta: "Contact Now!",
+  },
+];
+
 export const TEST_COLLECTIONS = [
   {
     id: 0,

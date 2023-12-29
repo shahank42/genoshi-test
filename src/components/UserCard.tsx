@@ -30,7 +30,7 @@ const UserCard = () => {
         </ul>
 
         <span className="opacity-50 text-sm">
-          Quota complete? <Link href="#" className={cn(buttonVariants({variant: "link"}), "px-0")}> Consider upgrading your plan</Link>
+          Quota complete? <Link href="/pricing" className={cn(buttonVariants({variant: "link"}), "px-0")}> Consider upgrading your plan</Link>
         </span>
 
         <div className="w-full flex justify-center">
