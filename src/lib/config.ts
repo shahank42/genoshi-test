@@ -202,3 +202,4 @@ export const USER_GRAPHS = [
     papersUsed: [0, 1, 3],
   },
 ];
+

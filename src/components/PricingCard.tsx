@@ -1,3 +1,5 @@
+"use client"
+
 import { PricingTier } from "@/lib/types";
 import {
   Card,
@@ -19,12 +21,13 @@ const PricingCard = ({
 }: {
   data: PricingTier;
   selected?: boolean;
-  setSelectedTier: Dispatch<SetStateAction<string>>;
+  setSelectedTier?: Dispatch<SetStateAction<string>>;
 }) => {
   return (
     <Card
       className={cn("w-[325px] h-[425px] md:h-[475px] flex flex-col", {
-        "outline-dashed outline-4 outline-offset-8 outline-yellow-500": selected,
+        "outline-dashed outline-4 outline-offset-8 outline-yellow-500":
+          selected,
       })}
     >
       <CardHeader>
@@ -45,7 +48,7 @@ const PricingCard = ({
         <Button
           className="flex gap-5 text-base md:text-lg py-6 md:py-7"
           onClick={() => {
-            setSelectedTier(data.name);
+            if (setSelectedTier) setSelectedTier(data.name);
           }}
         >
           {data.cta}

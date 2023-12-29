@@ -34,7 +34,8 @@ const UserCard = () => {
         </span>
 
         <div className="w-full flex justify-center">
-          <Button variant="secondary" className="flex gap-2 w-full">Accout Settings <Settings /></Button>
+          {/* <Button variant="secondary" className="flex gap-2 w-full">Accout Settings <Settings /></Button> */}
+          <Link href="/accounpt-settings" className={cn(buttonVariants({variant: "secondary"}), "flex gap-2 w-full")}>Account Setting <Settings /></Link>
         </div>
       </CardContent>
     </Card>
