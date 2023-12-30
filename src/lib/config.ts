@@ -1,36 +1,27 @@
 export const TEST_PAPERS = [
   {
     id: 0,
-    title: "Sample paper numero tres",
+    title: "Sample paper One",
     favorite: false,
   },
   {
     id: 1,
-    title: "Sample paper numero tres but with a longer name",
+    title: "Sample paper One but with a longer name",
     favorite: false,
   },
   {
     id: 2,
-    title: "Sample paper numero tres",
+    title: "Sample paper Two",
     favorite: false,
   },
-  {
-    id: 3,
-    title: "Sample paper numero tres",
-    favorite: false,
-  },
-  {
-    id: 4,
-    title: "Sample paper numero tres",
-    favorite: false,
-  },
+
 ];
 
 export const PRICING_TIERS = [
   {
     name: "basic-plan",
     title: "Basic Plan",
-    cost: 4,
+    cost: "$4 / user / month",
     description: "Get started ASAP with our basic plan!",
     features: ["Up to 10 graphs", "Up to 500 chatbot queries"],
     cta: "Purchase Now!",
@@ -38,7 +29,7 @@ export const PRICING_TIERS = [
   {
     name: "pro-plan",
     title: "Pro Plan",
-    cost: 8,
+    cost: "$8 / user / month",
     description: "Our most popular pro plan to meet all your needs!",
     features: [
       "Up to 50 graphs",
@@ -50,7 +41,7 @@ export const PRICING_TIERS = [
   {
     name: "enterprise-plan",
     title: "Enterprise Plan",
-    cost: 0,
+    cost: "Negotiable",
     description: "Have specific requirements? Let's talk business.",
     features: [
       "Unlimited graphs",
@@ -65,46 +56,34 @@ export const PRICING_TIERS = [
 export const TEST_COLLECTIONS = [
   {
     id: 0,
-    title: "Numero Quatro",
+    title: "Collection One",
     description: "A bunch of papers I like",
     numberPapers: 3,
   },
   {
     id: 1,
-    title: "Numero Quatro",
-    description: "A bunch of papers I like",
-    numberPapers: 3,
+    title: "Collection Two",
+    description: "Some more papers I like",
+    numberPapers: 2,
   },
   {
     id: 2,
-    title: "Numero Quatro",
-    description: "A bunch of papers I like",
-    numberPapers: 3,
+    title: "Collection Three",
+    description: "Random papers",
+    numberPapers: 7,
   },
   {
     id: 3,
-    title: "Numero Quatro",
-    description: "A bunch of papers I like",
-    numberPapers: 3,
-  },
-  {
-    id: 4,
-    title: "Numero Quatro",
-    description: "A bunch of papers I like",
-    numberPapers: 3,
-  },
-  {
-    id: 5,
-    title: "Numero Quatro",
-    description: "A bunch of papers I like",
-    numberPapers: 3,
+    title: "Collection Four",
+    description: "Out of description ideas",
+    numberPapers: 10,
   },
 ];
 
 export const USER_GRAPHS = [
   {
     id: 0,
-    title: "Numero Uno",
+    title: "Graph One",
     description:
       "This is a sample graph. It's placed here for testing purposes.",
     link: "#",
@@ -113,7 +92,7 @@ export const USER_GRAPHS = [
   },
   {
     id: 2,
-    title: "Numero Uno",
+    title: "Graph Two",
     description:
       "This is a sample graph. It's placed here for testing purposes.",
     link: "#",
@@ -122,7 +101,7 @@ export const USER_GRAPHS = [
   },
   {
     id: 3,
-    title: "Numero Uno",
+    title: "Graph Three",
     description:
       "This is a sample graph. It's placed here for testing purposes.",
     link: "#",
@@ -131,7 +110,7 @@ export const USER_GRAPHS = [
   },
   {
     id: 4,
-    title: "Numero Uno",
+    title: "Graph Four",
     description:
       "This is a sample graph. It's placed here for testing purposes.",
     link: "#",
@@ -140,7 +119,7 @@ export const USER_GRAPHS = [
   },
   {
     id: 5,
-    title: "Numero Uno",
+    title: "Graph Five",
     description:
       "This is a sample graph. It's placed here for testing purposes.",
     link: "#",
@@ -149,7 +128,7 @@ export const USER_GRAPHS = [
   },
   {
     id: 6,
-    title: "Numero Uno",
+    title: "Graph Six",
     description:
       "This is a sample graph. It's placed here for testing purposes.",
     link: "#",
@@ -158,7 +137,7 @@ export const USER_GRAPHS = [
   },
   {
     id: 7,
-    title: "Numero Uno",
+    title: "Graph Seven",
     description:
       "This is a sample graph. It's placed here for testing purposes.",
     link: "#",
@@ -167,39 +146,13 @@ export const USER_GRAPHS = [
   },
   {
     id: 8,
-    title: "Numero Uno",
+    title: "Graph Eight",
     description:
       "This is a sample graph. It's placed here for testing purposes.",
     link: "#",
     dateCreated: "28/12/2023",
     papersUsed: [0, 1, 3],
   },
-  {
-    id: 9,
-    title: "Numero Uno",
-    description:
-      "This is a sample graph. It's placed here for testing purposes.",
-    link: "#",
-    dateCreated: "28/12/2023",
-    papersUsed: [0, 1, 3],
-  },
-  {
-    id: 4,
-    title: "Numero Uno",
-    description:
-      "This is a sample graph. It's placed here for testing purposes.",
-    link: "#",
-    dateCreated: "28/12/2023",
-    papersUsed: [0, 1, 3],
-  },
-  {
-    id: 10,
-    title: "Numero Uno",
-    description:
-      "This is a sample graph. It's placed here for testing purposes.",
-    link: "#",
-    dateCreated: "28/12/2023",
-    papersUsed: [0, 1, 3],
-  },
+
 ];
 

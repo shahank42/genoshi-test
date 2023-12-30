@@ -43,19 +43,19 @@ const AccountSettings = () => {
         </div>
         <PricingCard data={PRICING_TIERS[0]} />
         <Link
-          className={buttonVariants({ variant: "outline" })}
+          className={buttonVariants({ variant: "link" })}
           href="/pricing"
         >
           Manage Subscription Plan
         </Link>
       </div>
 
-      <div className="flex flex-col w-full gap-3">
+      <div className="flex flex-col w-full gap-4">
         <span className="text-xl">Link with external services</span>
-        <div className="grid grid-cols-3 md:flex md:gap-5 md:justify-center gap-y-3 justify-items-center">
+        <div className="grid grid-cols-1 md:flex md:gap-5 md:justify-center gap-y-3 justify-items-center">
           {SERVICES_ICONS.map((service) => {
             return (
-              <Button key={service.name} variant="secondary" className="w-24 h-24">
+              <Button key={service.name} variant="secondary" className="w-48 h-24 bg-card hover:bg-card/70">
                 {service.Icon}
               </Button>
             );

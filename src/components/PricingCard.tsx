@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { PricingTier } from "@/lib/types";
 import {
@@ -32,14 +32,14 @@ const PricingCard = ({
     >
       <CardHeader>
         <CardTitle className="text-2xl md:text-3xl">{data.title}</CardTitle>
-        <span className="text-lg md:text-xl">${data.cost} / user / month</span>
+        <span className="text-lg md:text-xl">{data.cost}</span>
         <CardDescription className="text-base md:text-lg">
           {data.description}
         </CardDescription>
       </CardHeader>
       <CardContent className="flex-1">
         <ul className="list list-disc list-inside flex flex-col gap-2">
-          {data.features.map((feature) => {
+          {data.features.map((feature, idx) => {
             return <li className="text-base md:text-lg">{feature}</li>;
           })}
         </ul>
@@ -48,7 +48,10 @@ const PricingCard = ({
         <Button
           className="flex gap-5 text-base md:text-lg py-6 md:py-7"
           onClick={() => {
-            if (setSelectedTier) setSelectedTier(data.name);
+            if (setSelectedTier) {
+              setSelectedTier(data.name);
+              localStorage.setItem("subscriptionTier", data.name)
+            }
           }}
         >
           {data.cta}

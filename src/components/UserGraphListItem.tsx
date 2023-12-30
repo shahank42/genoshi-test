@@ -11,7 +11,7 @@ const UserGraphListItem = ({ data }: {
     <>
       <Drawer>
         <DrawerTrigger asChild>
-          <Button variant="outline" className="w-full h-48 mx-auto md:w-min-48">{data.title}</Button>  
+          <Button variant="secondary" className="w-full h-48 mx-auto md:w-min-48 text-lg">{data.title}</Button>  
         </DrawerTrigger>  
         
         <GraphDetails data={data} />

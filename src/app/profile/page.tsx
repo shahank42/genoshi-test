@@ -13,11 +13,11 @@ const Profile = () => {
       </div>
       <div className="flex-grow w-full">
         <Tabs defaultValue="my-graphs" className="w-full">
-          <TabsList className="w-full flex">
-            <TabsTrigger className="w-full" value="my-graphs">
+          <TabsList className="w-full flex h-26">
+            <TabsTrigger className="w-full text-lg" value="my-graphs">
               My Graphs
             </TabsTrigger>
-            <TabsTrigger className="w-full" value="paper-collections">
+            <TabsTrigger className="w-full text-lg" value="paper-collections">
               Paper Collections
             </TabsTrigger>
           </TabsList>

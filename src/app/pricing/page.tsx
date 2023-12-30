@@ -6,7 +6,9 @@ import { PRICING_TIERS } from "@/lib/config";
 import { useState } from "react";
 
 const Pricing = () => {
-  const [selectedTier, setSelectedTier] = useState<string>("")
+  const [selectedTier, setSelectedTier] = useState<string>((
+    localStorage.getItem("subscriptionTier") || "" 
+  ))
 
   return (
     <MaxWidthWrapper className="flex flex-col gap-10">

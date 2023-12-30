@@ -10,7 +10,7 @@ const MyCollections = () => {
       <div className="flex w-full">
         <div
           className={cn(
-            buttonVariants({ variant: "outline" }),
+            buttonVariants({ variant: "secondary" }),
             "px-6 py-10 flex w-full justify-between hover:cursor-pointer"
           )}
         >
