@@ -1,3 +1,5 @@
+"use client";
+
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import PricingCard from "@/components/PricingCard";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -41,11 +43,19 @@ const AccountSettings = () => {
         <div className="flex w-full">
           <span className="text-xl">Current Plan</span>
         </div>
-        <PricingCard data={PRICING_TIERS[0]} />
-        <Link
-          className={buttonVariants({ variant: "link" })}
-          href="/pricing"
-        >
+        {typeof window !== "undefined" &&
+        localStorage.getItem("subscriptionTier") ? (
+          <PricingCard
+            data={
+              PRICING_TIERS.filter(
+                (tier) => tier.name === localStorage.getItem("subscriptionTier")
+              )[0]
+            }
+          />
+        ) : (
+          <></>
+        )}
+        <Link className={buttonVariants({ variant: "link" })} href="/pricing">
           Manage Subscription Plan
         </Link>
       </div>
@@ -55,7 +65,11 @@ const AccountSettings = () => {
         <div className="grid grid-cols-1 md:flex md:gap-5 md:justify-center gap-y-3 justify-items-center">
           {SERVICES_ICONS.map((service) => {
             return (
-              <Button key={service.name} variant="secondary" className="w-48 h-24 bg-card hover:bg-card/70">
+              <Button
+                key={service.name}
+                variant="secondary"
+                className="w-48 h-24 bg-card hover:bg-card/70"
+              >
                 {service.Icon}
               </Button>
             );
