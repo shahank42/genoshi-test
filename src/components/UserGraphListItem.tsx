@@ -9,7 +9,7 @@ const UserGraphListItem = ({ data }: {
 }) => {
   return (
     <>
-      <Drawer>
+      <Drawer shouldScaleBackground>
         <DrawerTrigger asChild>
           <Button variant="secondary" className="w-full h-48 mx-auto md:w-min-48 text-lg">{data.title}</Button>  
         </DrawerTrigger>  
