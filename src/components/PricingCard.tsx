@@ -39,8 +39,12 @@ const PricingCard = ({
       </CardHeader>
       <CardContent className="flex-1">
         <ul className="list list-disc list-inside flex flex-col gap-2">
-          {data.features.map((feature, idx) => {
-            return <li className="text-base md:text-lg">{feature}</li>;
+          {data.features.map((feature) => {
+            return (
+              <li key={feature} className="text-base md:text-lg">
+                {feature}
+              </li>
+            );
           })}
         </ul>
       </CardContent>
@@ -50,7 +54,7 @@ const PricingCard = ({
           onClick={() => {
             if (setSelectedTier) {
               setSelectedTier(data.name);
-              localStorage.setItem("subscriptionTier", data.name)
+              localStorage.setItem("subscriptionTier", data.name);
             }
           }}
         >

@@ -30,7 +30,8 @@ const UserCard = () => {
         <ul>
           <li>
             Subscription:{" "}
-            {localStorage.getItem("subscriptionTier")
+            {typeof window !== "undefined" &&
+            localStorage.getItem("subscriptionTier")
               ? PRICING_TIERS.filter(
                   (tier) =>
                     tier.name === localStorage.getItem("subscriptionTier")

@@ -31,7 +31,7 @@ const CreateNewGraph = () => {
           <Label>{"Chooe your graph's layout"}</Label>
           <div className="flex flex-col items-center md:flex-row w-full justify-center gap-5">
             {[1, 2, 3].map((layout) => {
-              return <Button variant="secondary" className="w-48 h-48" />;
+              return <Button key={layout} variant="secondary" className="w-48 h-48" />;
             })}
           </div>
         </div>
