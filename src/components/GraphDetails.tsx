@@ -34,10 +34,10 @@ const GraphDetails = ({ data }: { data: UserGraph }) => {
           </DrawerHeader>
 
           <div className="flex w-full gap-2 justify-center md:justify-start">
-            <Button variant="default" className="w-10 h-10 p-0">
+            <Button variant="secondary" className="w-10 h-10 p-0">
               <Share className="w-6 h-6" />
             </Button>
-            <Button variant="default" className="w-10 h-10 p-0">
+            <Button variant="secondary" className="w-10 h-10 p-0">
               <Edit className="w-6 h-6" />
             </Button>
             <Button variant="destructive" className="w-10 h-10 p-0">
